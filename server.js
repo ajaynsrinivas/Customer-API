@@ -4,7 +4,7 @@ const bodyparser=require('body-parser');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-const PORT = 3001;
+const PORT = process.env.PORT||3001;
 var Schema = mongoose.Schema;
 var db = require('./db/mongoose');
 var Customer = require('./models/customer');
